@@ -35,7 +35,9 @@
   height: auto;
   margin-top: 100px;
 }
-
+.react-reveal {
+  align-items: center;
+}
 .skills-heading {
   font-size: 56px;
   font-weight: 400;
@@ -84,6 +86,7 @@
   .skills-image-div {
     /* display: none; */
     order: 2;
+    align-items: center;
   }
   .skills-image-div > * {
     margin-top: 0px;

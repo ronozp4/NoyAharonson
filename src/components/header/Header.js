@@ -32,8 +32,12 @@ const Header =({theme})=> {
         />
         </div>
         <SeoHeader />
-        <div style={{zIndex: 120, position: 'absolute', top: 0, width: '100%'}}>
+        <div className="menu-container">
           <header style={{direction: 'rtl'}} className="header">
+          <input className="menu-btn" type="checkbox" id="menu-btn" />
+            <label className="menu-icon" htmlFor="menu-btn">
+              <span className="navicon"></span>
+            </label>
           <ul className="menu" style={{ backgroundColor:'transparent' }}>
             <li>
                 <NavLink
@@ -178,14 +182,11 @@ const Header =({theme})=> {
               </li>
             </ul>
             <NavLink to={link} tag={Link} className="logo">
-              <span className="logo-name" style={{ color: 'white', fontSize: 30 }}>
+              {/* <span className="logo-name" style={{ color: 'white', fontSize: 30 }}>
                 {greeting.logo_name}
-              </span>
+              </span> */}
             </NavLink>
-            <input className="menu-btn" type="checkbox" id="menu-btn" />
-            <label className="menu-icon" htmlFor="menu-btn">
-              <span className="navicon"></span>
-            </label>
+
 
           </header>
         </div>

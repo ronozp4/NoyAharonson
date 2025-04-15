@@ -26,13 +26,16 @@ class SkillSection extends Component {
         {skills.data.map((skill, i) => {
           return (
             <div key={i} className="skills-main-div">
-              <Fade left duration={2000}>
-                <div className="skills-image-div" style={{ height: 450, width: '40%', alignItems: 'flex-start', backgroundColor: 'red', borderRadius: 250, justifyContent: 'flex-start', alignContent: 'start'}}>
+              <Fade left duration={2000} >
+                <div classNae="skills-image-div">
                 <img
                   src={require(`../../assets/images/aboutnoy.jpg`)}
                   alt=""
-                  style={{height: 500}}
+                  style={{height: 350,
+                    borderRadius: '50%',
+                    objectFit: 'cover'}}
                 />
+
                 </div>
               </Fade>
 

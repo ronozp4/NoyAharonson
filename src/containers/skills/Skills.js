@@ -40,7 +40,7 @@ export default function Skills(props) {
     
   },
   {
-    id: '13',
+    id: '14',
     name: 'ביטוח לאומי',
     description: 'תיאור לדוגמה',
     url: '',
@@ -49,7 +49,7 @@ export default function Skills(props) {
   }
   ,
   {
-    id: '13',
+    id: '15',
     name: 'ניסוח הסכמים',
     description: 'תיאור לדוגמה',
     url: '',

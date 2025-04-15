@@ -3,7 +3,6 @@
   box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 30px -15px;
   padding: 1rem;
   width: 80%;
-
   cursor: pointer;
   flex: 1 1 25%;
   border-radius: 8px;
@@ -47,7 +46,8 @@
 .repo-name-div {
   display: flex;
   align-items: center;
-  gap: 20px
+  gap: 20px;
+  flex-direction: column;
 }
 
 .repo-svg {
@@ -60,7 +60,8 @@
   color: rgb(36, 41, 46);
   font-family: "Google Sans Regular";
   margin-bottom: 0.75rem;
-  font-size: 50px;
+  font-size: 30px;
+  text-align: center;
   font-weight: 700;
   letter-spacing: -0.5px;
   overflow: hidden;
@@ -109,6 +110,7 @@
 @media (max-width: 768px) {
   .repo-card-div {
     flex: 1 1 100%;
+    width: 100%;
   }
 
   .repo-name {

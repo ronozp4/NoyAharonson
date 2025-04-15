@@ -51,10 +51,10 @@ const ContactForm = () => {
             <h1 className="skills-heading" style={{ marginTop: 40, fontFamily: 'Rubik-Bold' }}>
                 דברו איתי
             </h1>
-            <input name="name" type="text" class="feedback-input" placeholder="שם" />
-            <input name="" type="text" class="feedback-input" placeholder="טלפון" />
-            <input name="email" type="text" class="feedback-input" placeholder="אימייל" />
-            <textarea name="text" class="feedback-input" placeholder="פרטים"></textarea>
+            <input name="name" type="text" className="feedback-input" placeholder="שם" />
+            <input name="" type="text" className="feedback-input" placeholder="טלפון" />
+            <input name="email" type="text" className="feedback-input" placeholder="אימייל" />
+            <textarea name="text" className="feedback-input" placeholder="פרטים"></textarea>
             <input type="submit" value="שלח" disabled={isSubmitting} />
             {stateMessage && <p>{stateMessage}</p>}
         </form>
