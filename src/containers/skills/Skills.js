@@ -13,39 +13,39 @@ export default function Skills(props) {
     name: 'משפחה',
     description: 'תיאור לדוגמה',
     url: '',
-    img: "family.png"
-
+    img: "family.png",
+    nav: '/expertise/family',
   },
   {
     id: '1',
     name: 'מקרקעין',
     description: 'תיאור לדוגמה',
     url: '',
-    img: "home.png"
-    
+    img: "home.png",
+    nav: '/expertise/real-estate',    
   },{
     id: '2',
     name: 'יפוי כוח מתמשך',
     description: 'תיאור לדוגמה',
     url: '',
-    img: "document.png"
-    
+    img: "document.png",
+    nav: '/expertise/enduring-power',    
   },
   {
     id: '13',
     name: 'ניסוח הסכמים',
     description: 'תיאור לדוגמה',
     url: '',
-    img: "handshake.png"
-    
+    img: "handshake.png",
+    nav: '/expertise/drafting-agreements',    
   },
   {
     id: '14',
     name: 'ביטוח לאומי',
     description: 'תיאור לדוגמה',
     url: '',
-    img: "balance.png"
-    
+    img: "balance.png",
+    nav: '/expertise/national-insurance',    
   }
   ,
   {

@@ -21,7 +21,7 @@ const seo = {
 const greeting = {
   title: "נוי אהרונסון",
   logo_name: "נוי אהרונסון",
-  nickname: "משרד עורכי דין",
+  nickname: "באופן כללי",
   subTitle:
     "ברוכים הבאים לעמוד הבית של משרד עורכי דין נוי אהרונסון. אני נוי אהרונסון, עורכת דין המתמחה בדיני משפחה, מקרקעין, ביטוח לאומי וגישור. במשרדנו אנו מספקים שירות משפטי מקצועי, אישי וממוקד, תוך דגש על יחס חמים ואמין לכל לקוח. אנו מבינים את הצרכים והדאגות של לקוחותינו ומציעים פתרונות יצירתיים ומקצועיים שמתאימים לכל מקרה. אני מחויבת להעניק לך את הייעוץ המשפטי הטוב ביותר, ולהוביל אותך לתוצאה הרצויה בדרך היעילה וההוגנת ביותר. אם אתם זקוקים לייעוץ או ייצוג משפטי, אל תהססו לפנות אליי – אני כאן כדי לעזור לכם.",
   resumeLink:
@@ -29,6 +29,16 @@ const greeting = {
   portfolio_repository: "https://github.com/ashutosh1919/masterPortfolio",
   githubProfile: "https://github.com/ashutosh1919",
 };
+
+const businessAreasData = {
+"/expertise/enduring-power": {title: 'יפוי כוח מתמשך', subTitle: '', contant: '',image: ''},
+"/expertise/real-estate": {title: 'מקרקעין', subTitle: '', contant: '',image: ''},
+"/expertise/family": {title: 'משפחה', subTitle: '', contant: '',image: ''},
+"/expertise/drafting-agreements": {title: 'ניסוח הסכמים', subTitle: '', contant: '',image: ''},
+"/expertise/national-insurance": {title: 'ביטוח לאומי', subTitle: '', contant: '',image: ''},
+"/expertise": {title: 'באופן כללי', subTitle: '', contant: '',image: ''},
+
+}
 
 const socialMediaLinks = [
   /* Your Social Media Link */
@@ -40,21 +50,16 @@ const socialMediaLinks = [
   // twitter: "https://twitter.com/ashutosh_1919",
   // instagram: "https://www.instagram.com/layman_brother/"
 
-  {
-    name: "LinkedIn",
-    link: "https://www.linkedin.com/in/ashutosh1919/",
-    fontAwesomeIcon: "fa-linkedin-in", // Reference https://fontawesome.com/icons/linkedin-in?style=brands
-    backgroundColor: "#0077B5", // Reference https://simpleicons.org/?q=linkedin
-  },
+
   {
     name: "Gmail",
-    link: "mailto:ashutoshhathidara98@gmail.com",
-    fontAwesomeIcon: "fa-google", // Reference https://fontawesome.com/icons/google?style=brands
+    link: "mailto:noyaharonson@gmail.com",
+    fontAwesomeIcon: "fas fa-envelope", // Reference https://fontawesome.com/icons/google?style=brands
     backgroundColor: "#D14836", // Reference https://simpleicons.org/?q=gmail
   },
   {
     name: "Facebook",
-    link: "https://www.facebook.com/laymanbrother.19/",
+    link: "https://www.facebook.com/noy.aharonson/",
     fontAwesomeIcon: "fa-facebook-f", // Reference https://fontawesome.com/icons/facebook-f?style=brands
     backgroundColor: "#1877F2", // Reference https://simpleicons.org/?q=facebook
   },
@@ -564,4 +569,5 @@ export {
   publicationsHeader,
   publications,
   contactPageData,
+  businessAreasData
 };

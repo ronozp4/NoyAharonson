@@ -5,6 +5,7 @@
   }
   .greet-main {
     width: 90%;
+    flex: 1;
     padding: 10px 10px;
     margin: 0px auto;
   }
@@ -48,8 +49,12 @@
   }
   
   .greeting-image-div > * {
-    height: auto;
-    width: 110%;
+    display: flex;
+    justify-self: center;
+    width:  60%;
+    margin-top: 80px;
+    height: min-content;
+
   }
   
   /* Media Query */

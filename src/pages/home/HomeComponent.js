@@ -10,7 +10,7 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <Header theme={this.props.theme} />        
+        <Header showImage theme={this.props.theme} />        
         <Greeting theme={this.props.theme} />
         <Skills theme={this.props.theme} />
         <Footer theme={this.props.theme} />

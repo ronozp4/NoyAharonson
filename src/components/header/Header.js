@@ -2,39 +2,41 @@ import React, { useState } from "react";
 import "./Header.css";
 import { Fade } from "react-reveal";
 import { NavLink, Link } from "react-router-dom";
-import { greeting, settings } from "../../portfolio.js";
+import { settings } from "../../portfolio.js";
 import SeoHeader from "../seoHeader/SeoHeader";
 
-const Header =({theme})=> {
+const Header =({theme, showImage})=> {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-
+  console.log('showImage',showImage);
+  
   const handleDropdownToggle = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
   const onMouseEnter = (event, color) => {
     const el = event.target;
+    console.log('el',el);
     el.style.backgroundColor = color;
   };
   
   const onMouseOut = (event) => {
     const el = event.target;
-    el.style.backgroundColor = "transparent";
+    el.style.backgroundColor = "rgba(0, 0, 0,.4)";
   };
     const link = settings.isSplash ? "/splash" : "home";
     return (
       <Fade top duration={1000} distance="20px">
-                <div style={{alignItems: 'center'}}>
-        <img
+       <div style={{alignItems: 'center'}}>
+        {showImage ?<img
           src={require(`../../assets/images/mainNoy.png`)}
           alt=""
           width='100%'
           style={{ top: 0, zIndex: 0}}
-        />
+        />:<div style={{height: 50}}/>}
         </div>
         <SeoHeader />
         <div className="menu-container">
           <header style={{direction: 'rtl'}} className="header">
-          <input className="menu-btn" type="checkbox" id="menu-btn" />
+          <input onClick={()=> setIsDropdownOpen(false)} className="menu-btn" type="checkbox" id="menu-btn" />
             <label className="menu-icon" htmlFor="menu-btn">
               <span className="navicon"></span>
             </label>
@@ -64,27 +66,18 @@ const Header =({theme})=> {
                   השכלה
                 </NavLink>
               </li>
-              <li>
-                <NavLink
-                  to="/experience"
-                  tag={Link}
-                  activeStyle={{ fontWeight: "bold" }}
-                  style={{ color: 'white' }}
-                  onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
-                  onMouseOut={(event) => onMouseOut(event)}
-                >
-                  ניסיון
-                </NavLink>
-              </li>
-            
                           <li
         className="dropdown"
-        onMouseEnter={handleDropdownToggle}
+        onMouseEnter={(event) => {
+          handleDropdownToggle()
+          onMouseEnter(event, theme.highlight)}}
+          onMouseOut={(event) => onMouseOut(event)}
       >
         <NavLink
-          to="#"
+          to="/expertise"
           tag={Link}
-          style={{ color: 'white' }}
+          onClick={handleDropdownToggle}
+          style={{ color: 'white',zIndex: 999 }}
 
         >
           תוחמי התמחות
@@ -95,10 +88,10 @@ const Header =({theme})=> {
           <ul className="dropdown-content" style={{ position: 'absolute', display:'flex', flexDirection: 'column',}}>
             <li>
               <NavLink
-                to="/item1"
+                to="/expertise/enduring-power"
                 tag={Link}
                 activeStyle={{ fontWeight: 'bold' }}
-                style={{ color: 'white',  }}
+                style={{ color: 'white',zIndex: 999  }}
                 onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
                 onMouseOut={(event) => onMouseOut(event)}
               >
@@ -107,10 +100,10 @@ const Header =({theme})=> {
             </li>
             <li>
               <NavLink
-                to="/item2"
+                to="/expertise/real-estate"
                 tag={Link}
-                activeStyle={{ fontWeight: 'bold' }}
-                style={{ color: 'white',  }}
+                activeStyle={{ fontWeight: 'bold',zIndex: 999 }}
+                style={{ color: 'white'  }}
                 onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
                 onMouseOut={(event) => onMouseOut(event)}
               >
@@ -119,7 +112,7 @@ const Header =({theme})=> {
             </li>
             <li style={{}}>
                 <NavLink
-                  to="/item3"
+                  to="/expertise/family"
                   tag={Link}
                   activeStyle={{ fontWeight: "bold",  }}
                   style={{ color: 'white' }}
@@ -131,7 +124,7 @@ const Header =({theme})=> {
               </li>
               <li>
                 <NavLink
-                  to="/item4"
+                  to="/expertise/drafting-agreements"
                   tag={Link}
                   activeStyle={{ fontWeight: "bold" }}
                   style={{ color: 'white' }}
@@ -143,7 +136,7 @@ const Header =({theme})=> {
               </li>
               <li>
                 <NavLink
-                  to="/item5"
+                  to="/expertise/national-insurance"
                   tag={Link}
                   activeStyle={{ fontWeight: "bold" }}
                   style={{ color: 'white' }}
@@ -155,7 +148,7 @@ const Header =({theme})=> {
               </li>
               <li>
                 <NavLink
-                  to="/item6"
+                  to="/expertise/drafting-agreements"
                   tag={Link}
                   activeStyle={{ fontWeight: "bold" }}
                   style={{ color: 'white' }}

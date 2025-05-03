@@ -1,27 +1,32 @@
 import React from "react";
 import "./Topics.css";
-import SocialMedia from "../../components/socialMedia/SocialMedia";
-import Button from "../../components/button/Button";
-import { greeting } from "../../portfolio";
-import { Fade } from "react-reveal";
+import { greeting, businessAreasData } from "../../portfolio";
+import { useLocation } from 'react-router-dom'
+
 
 export default function Topics(props) {
   const theme = props.theme;
+  const location = useLocation();
   return (
-    <Fade bottom duration={2000} distance="40px">
       <div style={{direction: 'rtl', fontFamily: 'rubik-regular'}} className="greet-main" id="greeting">
         <div className="greeting-main" >
         <div className="greeting-image-div">
-            {/* <FeelingProud theme={theme} /> */}
+        <img
+                  src={require(`../../assets/images/aboutnoy.jpg`)}
+                  alt=""
+                  style={{  borderRadius: '50%',
+                    objectFit: 'cover'}}
+                />
           </div>
           <div className="greeting-text-div">
+
             <div>
               <h1 className="greeting-text" style={{ color: theme.text }}>
-                תחומי עיסוק
+                תחומי התמחות
               </h1>
               {greeting.nickname && (
                 <h2 className="greeting-nickname" style={{ color: theme.text }}>
-                   {greeting.nickname} 
+                   {businessAreasData[location.pathname].title} 
                 </h2>
               )}
               <p
@@ -31,10 +36,10 @@ export default function Topics(props) {
                 {greeting.subTitle}
               </p>
             </div>
+            
           </div>
 
         </div>
       </div>
-    </Fade>
   );
 }

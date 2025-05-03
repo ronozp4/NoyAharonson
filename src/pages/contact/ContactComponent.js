@@ -3,27 +3,21 @@ import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import TopButton from "../../components/topButton/TopButton";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
-import Button from "../../components/button/Button";
-import BlogsImg from "./BlogsImg";
-import AddressImg from "./AddressImg";
 import { Fade } from "react-reveal";
 import "./ContactComponent.css";
 import { greeting, contactPageData } from "../../portfolio.js";
 import ContactForm from "../../containers/contactMe/ContactForm"
 
 const ContactData = contactPageData.contactSection;
-const blogSection = contactPageData.blogSection;
-const addressSection = contactPageData.addressSection;
-const phoneSection = contactPageData.phoneSection;
-
 class Contact extends Component {
   render() {
     const theme = this.props.theme;
     return (
       <div className="contact-main">
+        <div style={{display: "flex", justifyContent: "center", zIndex: 111}}>
         <Header theme={theme} />
+        </div>
         <div className="basic-contact">
-          <Fade bottom duration={1000} distance="40px">
             <div className="contact-heading-div">
               <div className="contact-heading-img-div">
                 <img
@@ -37,7 +31,7 @@ class Contact extends Component {
                   נוי אהרונסון
                 </p>
                 <p style={{fontSize: 20, fontWeight: 500}}>
-                נייד: 050-5654844484684
+                נייד: 050-4210029
                 </p>
                 <p style={{fontSize: 20, fontWeight: 500}}>noyaharonson@gmail.com :מייל 
                 </p>
@@ -45,7 +39,6 @@ class Contact extends Component {
                 <SocialMedia theme={theme} />
               </div>
             </div>
-          </Fade>
          </div>
         <Footer theme={this.props.theme} onToggle={this.props.onToggle} />
         <TopButton theme={this.props.theme} />

@@ -8,6 +8,7 @@ import Contact from "../pages/contact/ContactComponent";
 import Projects from "../pages/projects/Projects";
 import { settings } from "../portfolio.js";
 import Error404 from "../pages/errors/error404/Error";
+import BusinessAreas from "../pages/businessAreas/BusinessAreas.js";
 
 export default class Main extends Component {
   render() {
@@ -36,42 +37,42 @@ export default class Main extends Component {
             path="/expertise"
             exact
             render={(props) => (
-              <Experience {...props} theme={this.props.theme} />
+              <BusinessAreas {...props} theme={this.props.theme} />
             )}
           />
           <Route
             path="/expertise/enduring-power"
             exact
             render={(props) => (
-              <Experience {...props} theme={this.props.theme} />
+              <BusinessAreas {...props} theme={this.props.theme} />
             )}
           />
           <Route
             path="/expertise/real-estate"
             exact
             render={(props) => (
-              <Experience {...props} theme={this.props.theme} />
+              <BusinessAreas {...props} theme={this.props.theme} />
             )}
           />
           <Route
             path="/expertise/national-insurance"
             exact
             render={(props) => (
-              <Experience {...props} theme={this.props.theme} />
+              <BusinessAreas {...props} theme={this.props.theme} />
             )}
           />
           <Route
             path="/expertise/family"
             exact
             render={(props) => (
-              <Experience {...props} theme={this.props.theme} />
+              <BusinessAreas {...props} theme={this.props.theme} />
             )}
           />
           <Route
             path="/expertise/drafting-agreements"
             exact
             render={(props) => (
-              <Experience {...props} theme={this.props.theme} />
+              <BusinessAreas {...props} theme={this.props.theme} />
             )}
           />
           <Route
