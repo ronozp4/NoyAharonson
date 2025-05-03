@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/NoyAharonson/static/css/main.536c74d2.chunk.css",
-    "main.js": "/NoyAharonson/static/js/main.1f435000.chunk.js",
-    "main.js.map": "/NoyAharonson/static/js/main.1f435000.chunk.js.map",
+    "main.js": "/NoyAharonson/static/js/main.f49bc1ba.chunk.js",
+    "main.js.map": "/NoyAharonson/static/js/main.f49bc1ba.chunk.js.map",
     "runtime-main.js": "/NoyAharonson/static/js/runtime-main.6e0c6490.js",
     "runtime-main.js.map": "/NoyAharonson/static/js/runtime-main.6e0c6490.js.map",
-    "static/js/2.8ea638e7.chunk.js": "/NoyAharonson/static/js/2.8ea638e7.chunk.js",
-    "static/js/2.8ea638e7.chunk.js.map": "/NoyAharonson/static/js/2.8ea638e7.chunk.js.map",
+    "static/js/2.c7156d31.chunk.js": "/NoyAharonson/static/js/2.c7156d31.chunk.js",
+    "static/js/2.c7156d31.chunk.js.map": "/NoyAharonson/static/js/2.c7156d31.chunk.js.map",
     "index.html": "/NoyAharonson/index.html",
-    "precache-manifest.a50ab723cc1fd5eb04d9f618c5d8088e.js": "/NoyAharonson/precache-manifest.a50ab723cc1fd5eb04d9f618c5d8088e.js",
+    "precache-manifest.65e3ff6e3b5fea80676d7932707a98a0.js": "/NoyAharonson/precache-manifest.65e3ff6e3b5fea80676d7932707a98a0.js",
     "service-worker.js": "/NoyAharonson/service-worker.js",
     "static/css/main.536c74d2.chunk.css.map": "/NoyAharonson/static/css/main.536c74d2.chunk.css.map",
     "static/media/index.css": "/NoyAharonson/static/media/Rubik-Regular.6840830e.ttf",
@@ -84,8 +84,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.6e0c6490.js",
-    "static/js/2.8ea638e7.chunk.js",
+    "static/js/2.c7156d31.chunk.js",
     "static/css/main.536c74d2.chunk.css",
-    "static/js/main.1f435000.chunk.js"
+    "static/js/main.f49bc1ba.chunk.js"
   ]
 }
