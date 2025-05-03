@@ -13,7 +13,7 @@ import BusinessAreas from "../pages/businessAreas/BusinessAreas.js";
 export default class Main extends Component {
   render() {
     return (
-      <BrowserRouter basename="/">
+      <BrowserRouter basename="/NoyAharonson">
         <Switch>
           <Route
             path="/"
